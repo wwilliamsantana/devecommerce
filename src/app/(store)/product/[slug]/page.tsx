@@ -20,7 +20,12 @@ async function getProduct(slug: string): Promise<ProductProps> {
   return product
 }
 
-
+export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+  const product = await getProduct(params.slug)
+  return {
+    title: product.title
+  }
+}
 
 
 export default async function ProductPage({ params }: ProductPageProps) {

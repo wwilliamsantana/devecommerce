@@ -8,7 +8,10 @@ const fontInter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Devstore"
+  title: {
+    template: "%s | Devstore",
+    default: "Devstore"
+  }
 
 };
 
