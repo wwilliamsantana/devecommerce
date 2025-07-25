@@ -7,7 +7,6 @@ interface CartItem {
   quantity: number
 }
 
-
 interface CartContextProps {
   items: CartItem[]
   addCart: (productId: string) => void
