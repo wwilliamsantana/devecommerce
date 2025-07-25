@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-start">
       <div className="flex items-center gap-5">
         <Link href={"/"} className="text-2xl font-extrabold text-white">
           devstore

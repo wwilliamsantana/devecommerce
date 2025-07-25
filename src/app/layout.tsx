@@ -8,7 +8,8 @@ const fontInter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Devstore",
+  title: "Devstore"
+
 };
 
 export default function RootLayout({
