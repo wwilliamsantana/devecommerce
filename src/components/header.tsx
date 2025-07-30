@@ -1,8 +1,9 @@
-import { Search, ShoppingBag } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { CartWidget } from "./cart-widget";
 import { SearchForm } from "./search-form";
+import { Suspense } from "react";
 
 
 export default function Header() {
@@ -13,7 +14,9 @@ export default function Header() {
           devstore
         </Link>
 
-        <SearchForm />
+        <Suspense fallback={null}>
+          <SearchForm />
+        </Suspense>
       </div>
       <div className="flex items-center gap-4">
         <CartWidget />
