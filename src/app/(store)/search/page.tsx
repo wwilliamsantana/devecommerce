@@ -22,7 +22,7 @@ export async function getProducts(slug: string): Promise<ProductProps[]> {
 }
 
 export default async function Search({ searchParams }: SearchProps) {
-  const { q: query } = searchParams
+  const { q: query } = await searchParams
 
   if (!query) {
     redirect("/")
